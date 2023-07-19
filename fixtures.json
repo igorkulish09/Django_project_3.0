@@ -1,0 +1,18 @@
+[
+  {
+    "model": "magazine.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "Sample question",
+      "pub_date": "2023-07-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "magazine.question",
+    "pk": 2,
+    "fields": {
+      "question_text": "Another question",
+      "pub_date": "2023-07-02T00:00:00Z"
+    }
+  }
+]
