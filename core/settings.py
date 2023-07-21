@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     "debug_toolbar",
 
     "magazine",
+    "django_celery_beat"
+
 ]
 
 MIDDLEWARE = [
@@ -138,3 +140,6 @@ INTERNAL_IPS = [
 # Celery settings
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_TIMEZONE = 'UTC'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'

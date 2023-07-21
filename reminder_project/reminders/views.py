@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from celery import shared_task
+from .utils import get_new_quotes
+
 
 @shared_task
 def send_reminder_email(email, text):
-    send_mail('Напоминание', text, 'your_email@example.com', [email])
+    send_mail('Нагадування', text, 'your_email@example.com', [email])
 
 
 def create_reminder(request):
@@ -15,6 +17,6 @@ def create_reminder(request):
 
         send_reminder_email.apply_async(args=[email, reminder_text], eta=reminder_datetime)
 
-        return render(request, 'reminder_form.html')
+        return render(request, 'magazine/reminder_form.html')
 
-    return render(request, 'reminder_form.html')
+    return render(request, 'magazine/reminder_form.html')

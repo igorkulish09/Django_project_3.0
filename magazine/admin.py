@@ -1,7 +1,6 @@
 from django.apps import AppConfig
 from django.contrib import admin
 from .models import Question, Choice
-
 # from .models import Log
 
 
@@ -21,3 +20,4 @@ class LogAdmin(admin.ModelAdmin):
 
 
 # admin.site.register(Log, LogAdmin)
+
