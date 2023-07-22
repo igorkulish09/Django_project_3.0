@@ -1,0 +1,4 @@
+<h1>{{ article.title }}</h1>
+<p>{{ article.content }}</p>
+<a href="{% url 'article_update' article.pk %}">Змінити</a>
+<a href="{% url 'article_delete' article.pk %}">Видалити</a>

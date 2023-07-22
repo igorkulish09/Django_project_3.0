@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from celery import shared_task
-from .utils import get_new_quotes
 
 
 @shared_task
@@ -20,3 +19,4 @@ def create_reminder(request):
         return render(request, 'magazine/reminder_form.html')
 
     return render(request, 'magazine/reminder_form.html')
+

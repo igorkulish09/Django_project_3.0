@@ -1,0 +1,35 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Стилі для пагінації */
+.pagination {
+  margin-top: 20px;
+}
+
+.step-links {
+  display: flex;
+  align-items: center;
+}
+
+.step-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.step-links .current {
+  margin: 0 10px;
+  font-weight: bold;
+}

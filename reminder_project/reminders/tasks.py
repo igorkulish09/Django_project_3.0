@@ -1,6 +1,6 @@
 from celery import shared_task
 from .models import Author, Quote
-from .utils import get_new_quotes
+from articles.utils import get_new_quotes
 
 
 @shared_task

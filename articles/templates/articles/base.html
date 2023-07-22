@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Django App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'articles/css/style.css' %}">
+    <script src="{% static 'articles/js/script.js' %}"></script>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

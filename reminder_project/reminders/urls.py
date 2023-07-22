@@ -1,6 +1,10 @@
-from django.urls import path, include
-from . import views
+from django.urls import path
+from reminder_project.reminders.views import create_reminder
+
+
+app_name = 'reminders'
 
 urlpatterns = [
-    path('create/', views.create_reminder, name='create-reminder'),
+    path('create-reminder/', create_reminder, name='create-reminder'),  # Шлях для створення нагадування
 ]
+
