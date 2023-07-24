@@ -42,12 +42,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    "debug_toolbar",
-    "magazine",
     "django_celery_beat",
+    "debug_toolbar",
 
+    "magazine",
     "articles",
-
 ]
 
 MIDDLEWARE = [

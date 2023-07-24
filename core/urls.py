@@ -21,8 +21,10 @@ from django.urls import path, include
 urlpatterns = [
     path("magazine/", include("magazine.urls")),
     path("admin/", admin.site.urls),
-    path('__debug__/', include('debug_toolbar.urls', namespace='djdt')),
-    path('reminders/', include('reminder_project.reminders.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('articles/', include('articles.urls')),
+    path("__debug__/", include("debug_toolbar.urls", namespace="djdt")),
+    path("accounts/", include("django.contrib.auth.urls")),
+    path("articles/", include("articles.urls")),
 ]
+
+
+# path('reminders/', include('Django_tutorial_CW.reminder_project.reminders.urls')),
